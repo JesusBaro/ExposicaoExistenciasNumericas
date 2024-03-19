@@ -1154,6 +1154,7 @@ a {
     background-image: url('../images/2DORIS_redes-de-nos_foto-Victor-Palatnik_Gonzalo-Gaudenzi.jpg');
     background-position: 0px 0px;
     background-size: 850px;
+    border:"yellow";
     background-attachment: fixed;
   }
   .top-parte-mobile._2 {
