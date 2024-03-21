@@ -55,9 +55,9 @@ a {
   float: right;
 }
 
-#exposicao{
+#exposicao {
   background-image: url('../images/2PEDRO_storm.jpg');
-  padding-bottom:5%;
+  padding-bottom: 5%;
 }
 
 .titulo-parte {
@@ -186,8 +186,8 @@ a {
 }
 
 .bloco-info {
-  overflow: hidden;
-  margin-bottom: -8px;
+  overflow: none;
+  margin-bottom: 8px;
 }
 
 .bloco-info.creddd {
@@ -338,10 +338,11 @@ a {
 .cloection-artistas {
   position: relative;
   display: block;
-  width: 80%;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 150vw;
+  max-width: 1500px;
+  /* margin-right: auto; */
+  padding-left: 40vw;
+  /* left: 30%; */
 }
 
 .collection-item {
@@ -388,6 +389,7 @@ a {
   position: relative;
 }
 
+/* SEMINARIO  */
 .simposio {
   position: relative;
   z-index: 2;
@@ -396,6 +398,11 @@ a {
   padding-bottom: 21vh;
   background-color: hsla(0, 0%, 100%, 0);
 }
+
+.secao-simposio-mobile {
+  display: none;
+}
+
 
 .simposio.multiply {
   z-index: 2;
@@ -512,6 +519,7 @@ a {
   height: 140vh;
 }
 
+/* Caisar seminario */
 .credito-completo {
   position: fixed;
   top: 0px;
@@ -534,8 +542,11 @@ a {
 }
 
 .body {
-  overflow: visible;
   background-color: #fff;
+  overflow: scroll;
+  /* width:105%; */
+  /* Bug: A página tinha um scroll p=na horizontal */
+  overflow-x: hidden;
 }
 
 .body-2 {
@@ -828,15 +839,22 @@ a {
   font-family: acumin-pro, sans-serif;
 }
 
+/* CAIXAS DO SIMPOSIO */
 .caixa-info-simposio._2 {
   border-top: 2px solid #fff;
   background-color: #231f20;
 }
 
+/* .caixa-info-mobile {
+  border-top: 2px solid #fff;
+  background-color: #231f20;
+} */
+/* titlo */
 .text-block-5 {
   display: inline-block;
   font-size: 18px;
   font-weight: 700;
+  color: #000000;
 }
 
 .text-block-5._2 {
@@ -956,6 +974,16 @@ a {
   padding-right: 10px;
   padding-left: 10px;
 }
+/* Edição : tamanho da logo e alinhamento  */
+.bloco-logo-footer {
+display: flex;
+justify-content: left;
+}
+.logo-unica-footer {
+  width: 60%;
+margin-left: 5vw;
+
+}
 
 .logos-full {
   width: 33%;
@@ -978,6 +1006,8 @@ a {
   transform: rotate(90deg);
 }
 
+
+
 @media screen and (max-width: 991px) {
   .links {
     -webkit-box-pack: start;
@@ -991,89 +1021,140 @@ a {
     -ms-flex-line-pack: stretch;
     align-content: stretch;
   }
+
   .infos.small {
     width: 90%;
   }
-  .simposi-content {
-    width: 70%;
-  }
-  .body {
-    overflow: hidden;
-  }
+
   .content--artista {
     width: 90%;
   }
+
   .multiply {
     display: none;
   }
+
   .multiply.mobie {
     display: none;
   }
+
   .multiply.mobie.jj {
     display: none;
     width: 100%;
   }
+
   .column-2 {
     padding-right: 20px;
   }
+
   .column-3 {
     padding-left: 20px;
   }
+
   .paragraph {
     margin-top: 39px;
   }
+
   .div-block-7 {
     max-width: 80%;
   }
+
   .artista-name {
     padding: 9px;
   }
+
   .div-block-8 {
     display: none;
   }
+
   .dropdown {
     display: none;
   }
+
   .body-4 {
     overflow: hidden;
   }
+
+  .secao-simposio-mobile {
+    display: none;
+  }
+
+  .simposio {
+    display: block;
+
+  }
+
+  .cloection-artistas {
+    position: relative;
+    display: block;
+    width: 100vw;
+    max-width: 1200vw;
+    margin-right: auto;
+    /* padding-left: 40vw; */
+
+  }
+  .simposi-content {
+    width: 80%;
+    margin-left: 1.5%;
+    border: 2px solid #231f20;
+    background-color: #fff;
+  }
+  .bloco-logo-footer {
+    display: flex;
+    justify-content: left;
+    }
+    .logo-unica-footer {
+      width: 60%;
+    margin-left: 8vw;
+ 
+    
+    }
 }
 
 @media screen and (max-width: 767px) {
   .content-a-exposicao {
     width: 80%;
   }
+
   .txt {
     width: 70%;
   }
+
   .grafismo-1 {
     left: -22%;
   }
+
   .nav-bar {
     display: none;
   }
+
   .menu {
     display: none;
     width: 100%;
     padding-right: 0px;
   }
+
   .links {
     margin-top: 22px;
     border-top: 1px solid #fff;
   }
+
   .infos {
     display: block;
     margin-top: 62px;
     margin-right: auto;
     margin-left: auto;
   }
+
   .content-infos {
     margin-top: 0px;
     padding: 7% 0px 4%;
   }
+
   .content-infos.home {
     margin-top: -63px;
   }
+
   ._60 {
     position: relative;
     top: 0%;
@@ -1085,16 +1166,26 @@ a {
     -ms-transform: none;
     transform: none;
   }
+
+  /* Bug: removendo a barra branca*/
   .bloco-info {
     padding-bottom: 18px;
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
   }
+
   .bloco-info.nne {
     border-bottom-style: none;
   }
+
   .bloco-info.especial {
     border-bottom-style: none;
   }
+
+  /* Edicao: logo unica footer */
+  .logo-unica-footer {
+    width: 100%;
+  }
+
   .logo {
     position: relative;
     left: 0px;
@@ -1104,39 +1195,51 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
+
   .image {
     float: none;
   }
+
   .collection-item {
     margin-bottom: 8%;
   }
+
   .image-2 {
     position: relative;
   }
+
   .simposi-content {
-    width: 100%;
-    margin-left: 0%;
+    width: 90%;
+    margin: auto;
+    margin-top: 4vh;
   }
+
   .collection-item-2 {
     margin-bottom: 17%;
   }
+
   .collection-list {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   .footer {
     position: static;
-    overflow: hidden;
+    overflow: visible;
   }
+
   .grafismo-2 {
     right: -6%;
   }
+
   .collection-list-wrapper-2 {
     margin-top: 0px;
   }
+
   .mobbile {
     background-color: #fff;
   }
+
   .top-parte-mobile {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1154,19 +1257,21 @@ a {
     background-image: url('../images/2DORIS_redes-de-nos_foto-Victor-Palatnik_Gonzalo-Gaudenzi.jpg');
     background-position: 0px 0px;
     background-size: 850px;
-    border:"yellow";
     background-attachment: fixed;
   }
+
   .top-parte-mobile._2 {
     background-image: url('../images/2PEDRO_vasos-de-lisboa_foto-Victor-Palatnik_Gonzalo-Gaudenzi.jpg');
     background-size: 850px;
     background-repeat: no-repeatundefined;
     background-attachment: fixed;
   }
+
   .top-parte-mobile._2._3 {
     background-image: url('../images/2ALICE_Apagar-das-Luzes_foto-Victor-Palatnik_Gonzalo-Gaudenzi.jpg');
     background-size: 850px;
   }
+
   .txt-mobile {
     display: block;
     width: 85%;
@@ -1175,6 +1280,7 @@ a {
     margin-left: auto;
     padding-bottom: 32px;
   }
+
   .card-mobule {
     display: block;
     width: 90%;
@@ -1183,16 +1289,20 @@ a {
     padding-top: 39px;
     padding-bottom: 30px;
   }
+
   .body-2 {
     display: block;
   }
+
   .image-8 {
     width: 50%;
   }
+
   .content--artista {
     width: 100%;
     padding-bottom: 53px;
   }
+
   .header-infos {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1209,83 +1319,109 @@ a {
     -ms-flex-align: center;
     align-items: center;
   }
+
   .infos-artista {
     margin-top: 20px;
   }
+
   .multiply.mobie {
     margin-bottom: 25px;
   }
+
   .column-2 {
     margin-top: 42px;
   }
+
   .column-3 {
     margin-top: 43px;
     padding-right: 20px;
     padding-left: 10px;
   }
+
   .body-3 {
-    overflow: hidden;
+    overflow: scroll;
   }
+
   .data {
     padding-top: 6px;
     padding-bottom: 6px;
     line-height: 28px;
   }
+
   .div-block-4 {
     display: none;
   }
+
   .div-block-4.mobile-title {
     display: block;
     margin-left: 0%;
   }
+
   .image-9 {
     display: none;
   }
+
   .div-block-6 {
     margin-top: 11px;
   }
+
   .div-block-7 {
     position: relative;
   }
+
   .artista-container {
     display: inline-block;
     width: 50%;
   }
+
   .artista-link {
     position: relative;
   }
+
   .artista-name {
     left: auto;
     right: 0px;
     bottom: 0px;
     width: 100%;
   }
+
   .column-4 {
     padding-left: 0px;
   }
+
   .column-5 {
     padding-left: 0px;
   }
+
+  /* Edição logos no Footer : */
   .column-6 {
     padding-left: 0px;
+    /* Bug: ocultando os icones que se repetiam no footer*/
+    display: none;
   }
+
   .pt-in {
     display: none;
   }
+
   .heading-2 {
     margin-top: 54px;
   }
+
+  /* Edição: Menu mobile: ocultanot menu */
   .link-2 {
-    display: block;
+    display: none;
     margin-right: auto;
     margin-left: auto;
     padding: 25px;
     font-weight: 700;
     text-align: center;
   }
+
   .dropdown {
     display: block;
   }
+
   .fill-menu {
     position: fixed;
     left: 0px;
@@ -1296,6 +1432,7 @@ a {
     height: 100vh;
     background-color: #231f20;
   }
+
   .div-block-9 {
     display: block;
     width: 90%;
@@ -1303,25 +1440,30 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
+
   .link-block-4 {
     width: 100%;
     padding: 26px;
     border-bottom: 1px solid #fff;
   }
+
   .link-block-4.hide {
     display: none;
   }
+
   .txt-link-menu {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
   }
+
   .menu-top {
     font-family: acumin-pro, sans-serif;
     color: #fff;
     font-weight: 700;
     text-align: center;
   }
+
   .lin-close {
     position: absolute;
     left: 0px;
@@ -1331,6 +1473,7 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
+
   .close {
     position: absolute;
     left: 0px;
@@ -1338,21 +1481,26 @@ a {
     bottom: 0px;
     padding: 33px;
   }
+
   .image-11 {
     display: block;
     width: 50px;
     margin-right: auto;
     margin-left: auto;
   }
+
   .column-7 {
     padding-left: 0px;
   }
+
   .column-8 {
     padding-left: 0px;
   }
+
   .column-9 {
     padding-left: 0px;
   }
+
   .image-13 {
     width: 18px;
     height: 18px;
@@ -1361,8 +1509,40 @@ a {
     -ms-grid-row-align: center;
     align-self: center;
   }
+
   .text-block-6 {
     margin-right: 23px;
+  }
+
+  .simposio {
+    display: none;
+  }
+
+  .secao-simposio-mobile {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .simposio-mobile {
+    position: relative;
+    z-index: 2;
+    margin-top: 6vh;
+    padding-top: 21vh;
+    padding-bottom: 21vh;
+    background-color: hsla(0, 0%, 100%, 0);
+  }
+  .cloection-artistas {
+    position: relative;
+    display: block;
+    width: 100vw;
+    max-width: 1200vw;
+    margin-right: auto;
+    padding-left: 0vw;
+
+  }
+  .logo-unica-footer {
+    width: 80%;
   }
 }
 
@@ -1370,6 +1550,7 @@ a {
   .a-exposicao {
     padding-bottom: 0%;
   }
+
   .content-a-exposicao {
     width: 100%;
     padding-top: 0px;
@@ -1377,6 +1558,7 @@ a {
     padding-left: 0%;
     float: left;
   }
+
   .titulo-parte {
     position: relative;
     left: 0%;
@@ -1397,6 +1579,7 @@ a {
     -ms-flex: 0 auto;
     flex: 0 auto;
   }
+
   .txt {
     position: relative;
     left: 0%;
@@ -1407,25 +1590,31 @@ a {
     -ms-transform: none;
     transform: none;
   }
+
   .grafismo-1 {
     left: -19%;
     display: none;
     opacity: 0.22;
   }
+
   .nav-bar {
     display: none;
   }
+
   ._60 {
     display: none;
   }
+
   .logo {
     width: 70%;
   }
+
   .image {
     display: block;
     margin-right: auto;
     margin-left: auto;
   }
+
   .bg-1 {
     position: relative;
     left: 0px;
@@ -1446,39 +1635,49 @@ a {
     -ms-flex-align: center;
     align-items: center;
   }
+
   .simposi-content {
     display: block;
     width: 91%;
     margin-right: auto;
     margin-left: auto;
   }
+
   .collection-item-2 {
     margin-top: 4%;
     margin-bottom: 13px;
   }
+
   .collection-list {
     padding: 29px;
     border-bottom: 1px solid #fff;
   }
+
   .footer {
     position: static;
     overflow: hidden;
   }
+
   .content-footer {
     padding: 32px 21px;
   }
+
   .link-block-2 {
     width: 50%;
   }
+
   .image-3 {
     padding: 3% 19%;
   }
+
   .mobbile {
     background-color: #fff;
   }
+
   .sobre-mobile {
     padding-bottom: 41px;
   }
+
   .top-parte-mobile {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1497,9 +1696,11 @@ a {
     background-position: 50% 50%;
     background-size: cover;
   }
+
   .top-parte-mobile._2 {
     background-image: url('../images/fundo-2.jpg');
   }
+
   .txt-mobile {
     display: block;
     width: 85%;
@@ -1507,55 +1708,70 @@ a {
     margin-left: auto;
     padding-top: 23px;
   }
+
   .card-mobule {
     width: 91%;
   }
+
   .card-mobule._22 {
     width: 100%;
     padding-top: 38px;
     padding-bottom: 38px;
   }
+
   .image-5 {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .image-6 {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .image-7 {
     padding-right: 18px;
     padding-left: 18px;
   }
+
   .image-8 {
     width: 90%;
   }
+
   .header-infos {
     padding-right: 8%;
     padding-left: 8%;
   }
+
   .row-2 {
     width: 90%;
   }
+
   .div-block-4.mobile-title {
     max-width: 100%;
   }
+
   .artista-container {
     width: 100%;
   }
+
   .text-block-4._2 {
     width: 100%;
   }
+
   .text-block-5._2.mobile {
     margin-top: 10px;
     float: left;
   }
+
   .heading-2 {
     margin-top: 33px;
   }
+
   .logos-full {
     width: 50%;
   }
+
   .image-13 {
     width: 20px;
     height: 18px;
@@ -1564,8 +1780,40 @@ a {
     -ms-grid-row-align: center;
     align-self: center;
   }
+
   .text-block-6 {
     margin-right: 19px;
   }
-}
 
+  .simposio {
+    display: none;
+  }
+
+  .simposio-mobile {
+    position: relative;
+    z-index: 2;
+    margin-top: 6vh;
+    padding-top: 21vh;
+    padding-bottom: 21vh;
+    background-color: hsla(0, 0%, 100%, 0);
+  }
+
+  .logo-unica-footer {
+    width: 90%;
+    margin-left: -1vw;
+  }
+
+  .barra-de-logos {
+    display: none;
+
+  }
+  .content-footer {
+    position: static;
+    z-index: 8;
+    overflow: hidden;
+    padding: 82px 50px 97px;
+    background-color: #231f20;
+    display: flex;
+    justify-content: left;
+  }
+}
